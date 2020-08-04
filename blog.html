@@ -15,11 +15,13 @@
     integrity="sha256-13EKEXRsynh3cmmNF1dlW6uvoC1SZVaW94bIHZQJoMU=" crossorigin="anonymous" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
     integrity="sha256-U/cHDMTIHCeMcvehBv1xQ052bPSbJtbuiw4QA9cTKz0=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/style.css" />
   <title>Rahul Tripathi</title>
   <style>
     body {
       font-family: 'Exo 2', sans-serif;
     }
+
     .material-icons {
       font-size: 25px;
     }
@@ -29,7 +31,8 @@
       text-align: center;
       cursor: pointer;
     }
-    .active{
+
+    .active {
       border-top: 3px solid #8450e6;
       color: #8450e6;
     }
@@ -38,27 +41,72 @@
 
 <body>
   <div class="divider" style="height: 4px; background-color: #8b54f6;"></div>
-  
+  <div class="row" style="margin-bottom: 70px">
+    <div class="col s12 m6">
+      <center>
+        <p style="font-size: 30px"><img style="vertical-align: middle; height: 40px" src="/medium.svg"> Medium Blog </p>
+        <div class="card" style="padding: 20px ; font-size: 15px; text-align: center">I write about the features that I
+          build on my medium blog , so do check it out if you love it at <a
+            href="https://medium.com/@rahultripathidev">https://medium.com/@rahultripathidev</a></div>
+      </center>
+      <div class="card" style="padding:30px;">
+        <div id="medium-widget"></div>
+      </div>
+      <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+      <script>
+        MediumWidget.Init({
+          renderTo: '#medium-widget',
+          params: {
+            "resource": "https://medium.com/@rahultripathidev",
+            "postsPerLine": 2,
+            "limit": 1,
+            "picture": "big",
+            "fields": ["description", "author", "claps", "publishAt"],
+            "ratio": "landscape"
+          }
+        })
+      </script>
+    </div>
+    <div class="col s12 m6">
+      <div class="card-custom" style="padding: 20px ; font-size: 18px; margin-top: 10vh">
+        <center>
+          <p style="font-size:30px">
+            <img style="vertical-align: middle; height: 30px" src="/code.svg"> CodeTheOdd </p>
+        </center>CodeTheOdd is a series of Mailing list about the open source tools that I build so that interested
+        people can help by contributing to the project . Subscribe to the Mail listing Now ! <br>
+        <br>
+        <center><a class="waves-effect waves-light btn-large"
+            style="background-color: #8450e6 ; border-radius: 40px; z-index:-1">Subscribe Now</a></center>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+
 
 
   <nav style="position: fixed;bottom: 0px !important; height: 50px; background-color: black">
-  <center>  <div class="nav-wrapper row ">
+    <center>
+      <div class="nav-wrapper row ">
 
-      <a href="/index.html"><div class="col s3 in ">
-        <span class="material-icons">
-          home
-        </span></div></a>
-      <div class="col s3 in active" ><span class="material-icons ">
-        rss_feed
-        </span></div>
-      <a href="/playground.html"><div class="col s3 in" ><span class="material-icons">
-          code
-        </span></div></a>
-     <a href="/contact.html"> <div class="col s3  in" ><span class="material-icons">
-        forum
-        </span></div></a>
-    </div>
-  </center>
+        <a href="/index.html">
+          <div class="col s4 in ">
+            <span class="material-icons">
+              home
+            </span></div>
+        </a>
+        <div class="col s4 in active"><span class="material-icons ">
+            rss_feed
+          </span></div>
+
+        <a href="/contact.html">
+          <div class="col s4  in"><span class="material-icons">
+              forum
+            </span></div>
+        </a>
+      </div>
+    </center>
   </nav>
 </body>
 
