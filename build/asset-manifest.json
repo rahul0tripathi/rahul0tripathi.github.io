@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1553b1ec.css",
+    "main.js": "/static/js/main.83c66827.js",
+    "static/js/787.94ee0163.chunk.js": "/static/js/787.94ee0163.chunk.js",
+    "static/media/MonoLisa-Bold.woff2": "/static/media/MonoLisa-Bold.2c82042c545faeb86de2.woff2",
+    "static/media/MonoLisa-Regular.woff2": "/static/media/MonoLisa-Regular.08eacc552f2e41b0ed34.woff2",
+    "index.html": "/index.html",
+    "main.1553b1ec.css.map": "/static/css/main.1553b1ec.css.map",
+    "main.83c66827.js.map": "/static/js/main.83c66827.js.map",
+    "787.94ee0163.chunk.js.map": "/static/js/787.94ee0163.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1553b1ec.css",
+    "static/js/main.83c66827.js"
+  ]
+}
