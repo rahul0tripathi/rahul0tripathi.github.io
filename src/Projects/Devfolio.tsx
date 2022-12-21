@@ -10,7 +10,7 @@ export default function Devfolio() {
           I also sometimes hack at Devfolio events
         </p>
         <div className="card-actions justify-left">
-          <a href="https://devfolio.co/@MajTrippy">
+          <a href="https://devfolio.co/@rahul0tripathi">
             <button className="btn btn-ghost bg-primary text-accent">
               Profile
             </button>
